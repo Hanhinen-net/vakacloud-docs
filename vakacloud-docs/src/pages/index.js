@@ -5,7 +5,7 @@ import styles from './index.module.css';
 const FeatureList = [
   {
     title: 'Helppokäyttöinen',
-    Svg: require('@site/static/img/vaka-cloud-logo.png').default,
+    image: require('@site/static/img/vaka-cloud-logo.png').default,
     description: (
       <>
         VakaCloud on suunniteltu yhdessä varhaiskasvatuksen ammattilaisten kanssa.
@@ -16,7 +16,7 @@ const FeatureList = [
   },
   {
     title: 'Tehokas Viestintä',
-    Svg: require('@site/static/img/vaka-cloud-logo.png').default,
+    image: require('@site/static/img/vaka-cloud-logo.png').default,
     description: (
       <>
         Yhdistä päiväkoti ja koti saumattomasti. Reaaliaikaiset viestit,
@@ -27,7 +27,7 @@ const FeatureList = [
   },
   {
     title: 'Turvallinen & Kotimainen',
-    Svg: require('@site/static/img/vaka-cloud-logo.png').default,
+    image: require('@site/static/img/vaka-cloud-logo.png').default,
     description: (
       <>
         Tietoturva on meille ykkösasia. Palvelu on täysin GDPR-yhteensopiva ja kaikki tiedot säilytetään
@@ -37,11 +37,11 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({image, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={image} className={styles.featureSvg} alt={title} style={{height: '200px', width: 'auto'}} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
