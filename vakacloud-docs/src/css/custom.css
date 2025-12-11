@@ -41,7 +41,7 @@
 .navbar__link--active {
   color: var(--ifm-color-primary); 
   background-color: transparent; 
-
+}
 
 .footer {
   background-color: #f5f6f7;
