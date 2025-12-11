@@ -41,57 +41,70 @@ const config = {
   },
 
   // docusaurus.config.js
-presets: [
-  [
-    'classic',
-    {
-      docs: { sidebarPath: './sidebars.js' },
-      blog: {
-        showReadingTime: true,
-        // LISÄÄ TÄMÄ OSA:
-        feedOptions: {
-          type: 'json', // JSON on helpoin Reactille
-          copyright: `Copyright © ${new Date().getFullYear()} VakaCloud`,
+
+
+  presets: [
+    [
+      'classic',
+      /** @type {import('@docusaurus/preset-classic').Options} */
+      ({
+        
+        docs: false, 
+        
+        blog: {
+          showReadingTime: true,
+          routeBasePath: '/blog', 
+          blogSidebarTitle: 'Viimeisimmät tiedotteet',
+          blogSidebarCount: 'ALL',
+          
+          
+          feedOptions: {
+            type: 'json',
+            copyright: `Copyright © ${new Date().getFullYear()} Hanhinen.net Consulting Oy`,
+          },
         },
-      },
-      theme: { customCss: './src/css/custom.css' },
-    },
+        theme: {
+          customCss: './src/css/custom.css',
+        },
+      }),
+    ],
   ],
-],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Voit vaihtaa tämän kuvan myöhemmin (näkyy kun linkki jaetaan somessa)
-      image: 'img/vaka-cloud-logo.png',
+      image: 'img/docusaurus-social-card.jpg',
       colorMode: {
         defaultMode: 'light',
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'VakaCloud', // Sivuston nimi yläkulmassa
+        title: 'VakaCloud',
         logo: {
           alt: 'VakaCloud Logo',
-          src: 'img/vaka-cloud-logo.png', // Varmista että sinulla on logo tässä kansiossa (static/img/)
+          src: 'img/logo.svg',
         },
         items: [
-          // Vasen puoli
+
           {
-            to: '/blog', 
-            label: 'Päivitykset 🚀', // Tärkein linkki
+            to: '/blog/tags/paivitykset', 
+            label: 'Päivitykset 🚀', 
             position: 'left'
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Käyttöohjeet',
+            to: '/blog/tags/uutiset', 
+            label: 'Uutiset 📰', 
+            position: 'left'
           },
-          // Oikea puoli
+          {
+            to: '/blog/tags/huolto', 
+            label: 'Huoltoilmoitukset ⚠️', 
+            position: 'left'
+          },
           {
             href: 'https://app.vakacloud.fi',
-            label: 'Kirjaudu palveluun',
+            label: 'Siirry palveluun',
             position: 'right',
           },
         ],
@@ -100,33 +113,18 @@ presets: [
         style: 'dark',
         links: [
           {
-            title: 'VakaCloud',
+            title: 'Kategoriat',
             items: [
-              {
-                label: 'Etusivu',
-                to: '/',
-              },
-              {
-                label: 'Päivitykset',
-                to: '/blog',
-              },
-              {
-                label: 'Käyttöohjeet',
-                to: '/docs/intro',
-              },
+              { label: 'Päivitykset', to: '/blog/tags/paivitykset' },
+              { label: 'Uutiset', to: '/blog/tags/uutiset' },
+              { label: 'Huoltoilmoitukset', to: '/blog/tags/huolto' },
             ],
           },
           {
-            title: 'Tuki',
+            title: 'VakaCloud',
             items: [
-              {
-                label: 'Ota yhteyttä',
-                href: 'mailto:info@vakacloud.fi', // Tai tukisivun osoite
-              },
-              {
-                label: 'Tietosuoja',
-                href: 'https://app.vakacloud.fi/privacy',
-              },
+              { label: 'Etusivu', to: '/' },
+              { label: 'Tuki', href: 'mailto:tuki@vakacloud.fi' },
             ],
           },
         ],
