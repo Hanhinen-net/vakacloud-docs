@@ -1,66 +1,53 @@
 import clsx from 'clsx';
+import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
-const FeatureList = [
-  {
-    title: 'Helppokäyttöinen',
-    image: require('@site/static/img/vaka-cloud-logo.png').default,
-    description: (
-      <>
-        VakaCloud on suunniteltu yhdessä varhaiskasvatuksen ammattilaisten kanssa.
-        Käyttöliittymä on selkeä ja intuitiivinen, mikä vapauttaa aikaa hallinnosta
-        tärkeimpään – eli lapsille.
-      </>
-    ),
-  },
-  {
-    title: 'Tehokas Viestintä',
-    image: require('@site/static/img/vaka-cloud-logo.png').default,
-    description: (
-      <>
-        Yhdistä päiväkoti ja koti saumattomasti. Reaaliaikaiset viestit,
-        tiedotteet, hoitoaikojen varaukset ja tapahtumakalenteri löytyvät
-        kaikki yhdestä turvallisesta paikasta.
-      </>
-    ),
-  },
-  {
-    title: 'Turvallinen & Kotimainen',
-    image: require('@site/static/img/vaka-cloud-logo.png').default,
-    description: (
-      <>
-        Tietoturva on meille ykkösasia. Palvelu on täysin GDPR-yhteensopiva ja kaikki tiedot säilytetään
-        turvallisesti Suomessa.
-      </>
-    ),
-  },
-];
-
-function Feature({image, title, description}) {
+function HomepageHeader() {
+  const {siteConfig} = useDocusaurusContext();
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <img src={image} className={styles.featureSvg} alt={title} style={{height: '200px', width: 'auto'}} />
+    <header className={clsx('hero', styles.heroBanner)}>
+      <div className="container">
+        <Heading as="h1" className="hero__title">
+          {siteConfig.title}
+        </Heading>
+        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        
+        {/* Linkkipainikkeet */}
+        <div className={styles.buttons} style={{ display: 'flex', flexDirection: 'column', gap: '15px', marginTop: '30px' }}>
+          <Link
+            className="button button--primary button--lg"
+            to="/blog/tags/news">
+            Uutiset 📰
+          </Link>
+          <Link
+            className="button button--info button--lg"
+            to="/blog/tags/updates">
+            Päivitykset 🚀
+          </Link>
+          <Link
+            className="button button--warning button--lg"
+            to="/blog/tags/maintenance">
+            Huoltoilmoitukset ⚠️
+          </Link>
+        </div>
       </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-      </div>
-    </div>
+    </header>
   );
 }
 
-export default function HomepageFeatures() {
+export default function Home() {
+  const {siteConfig} = useDocusaurusContext();
   return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
-      </div>
-    </section>
+    <Layout
+      title={`Etusivu | ${siteConfig.title}`}
+      description="VakaCloud päivitykset ja tiedotteet">
+      <HomepageHeader />
+      <main>
+        {/* Tässä ei ole enää HomepageFeatures-komponenttia, joten kuvat yms. poistuvat */}
+      </main>
+    </Layout>
   );
 }
