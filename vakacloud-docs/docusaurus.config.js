@@ -88,17 +88,17 @@ const config = {
         items: [
 
           {
-            to: '/blog/tags/paivitykset', 
+            to: '/blog/tags/updates', 
             label: 'Päivitykset 🚀', 
             position: 'left'
           },
           {
-            to: '/blog/tags/uutiset', 
+            to: '/blog/tags/news', 
             label: 'Uutiset 📰', 
             position: 'left'
           },
           {
-            to: '/blog/tags/huolto', 
+            to: '/blog/tags/maintenance', 
             label: 'Huoltoilmoitukset ⚠️', 
             position: 'left'
           },
@@ -115,9 +115,9 @@ const config = {
           {
             title: 'Kategoriat',
             items: [
-              { label: 'Päivitykset', to: '/blog/tags/paivitykset' },
-              { label: 'Uutiset', to: '/blog/tags/uutiset' },
-              { label: 'Huoltoilmoitukset', to: '/blog/tags/huolto' },
+              { label: 'Päivitykset', to: '/blog/tags/updates' },
+              { label: 'Uutiset', to: '/blog/tags/news' },
+              { label: 'Huoltoilmoitukset', to: '/blog/tags/maintenance' },
             ],
           },
           {
