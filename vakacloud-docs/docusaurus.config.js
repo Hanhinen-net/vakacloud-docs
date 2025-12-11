@@ -137,3 +137,6 @@ presets: [
         darkTheme: prismThemes.dracula,
       },
     }),
+};
+
+export default config;
