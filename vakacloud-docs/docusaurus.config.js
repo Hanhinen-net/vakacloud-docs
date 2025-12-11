@@ -10,9 +10,9 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'VakaCloud Updates',
-  tagline: 'Stay updated with the latest news from VakaCloud',
-  favicon: 'img/favicon.ico',
+  title: 'VakaCloud',
+  tagline: 'Moderni toiminnanohjaus varhaiskasvatukseen',
+  favicon: 'img/vaka-cloud-logo.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {

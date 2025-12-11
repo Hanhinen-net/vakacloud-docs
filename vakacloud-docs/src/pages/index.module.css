@@ -1,23 +1,33 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
+/* Hero-banneri:  */
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background-color: #ffffff; 
+  color: #1c1e21; 
 }
 
+.heroBanner h1 {
+  color: #16A34A;
+  font-weight: 800;
+}
+
+.heroBanner p {
+  color: #4b5563; /
+  font-size: 1.25rem;
+}
+
+/* Responsiivisuus */
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;
   }
 }
 
+/* Painikkeiden asettelu */
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+  gap: 1rem;

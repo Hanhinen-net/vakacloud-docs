@@ -1,43 +1,66 @@
 import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-
 import Heading from '@theme/Heading';
-import styles from './index.module.css';
+import styles from './styles.module.css';
 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+const FeatureList = [
+  {
+    title: 'Helppokäyttöinen',
+    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    description: (
+      <>
+        VakaCloud on suunniteltu yhdessä varhaiskasvatuksen ammattilaisten kanssa.
+        Käyttöliittymä on selkeä ja intuitiivinen, mikä vapauttaa aikaa hallinnosta
+        tärkeimpään – eli lapsille.
+      </>
+    ),
+  },
+  {
+    title: 'Tehokas Viestintä',
+    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    description: (
+      <>
+        Yhdistä päiväkoti ja koti saumattomasti. Reaaliaikaiset viestit,
+        tiedotteet, hoitoaikojen varaukset ja tapahtumakalenteri löytyvät
+        kaikki yhdestä turvallisesta paikasta.
+      </>
+    ),
+  },
+  {
+    title: 'Turvallinen & Kotimainen',
+    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    description: (
+      <>
+        Tietoturva on meille ykkösasia. Palvelu on täysin GDPR-yhteensopiva ja kaikki tiedot säilytetään
+        turvallisesti Suomessa.
+      </>
+    ),
+  },
+];
+
+function Feature({Svg, title, description}) {
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/blog">
-            Lue VakaCloud Uutiset 📰
-          </Link>
-        </div>
+    <div className={clsx('col col--4')}>
+      <div className="text--center">
+        <Svg className={styles.featureSvg} role="img" />
       </div>
-    </header>
+      <div className="text--center padding-horiz--md">
+        <Heading as="h3">{title}</Heading>
+        <p>{description}</p>
+      </div>
+    </div>
   );
 }
 
-export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+export default function HomepageFeatures() {
   return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-    </Layout>
+    <section className={styles.features}>
+      <div className="container">
+        <div className="row">
+          {FeatureList.map((props, idx) => (
+            <Feature key={idx} {...props} />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
