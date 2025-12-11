@@ -73,7 +73,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/vaka-cloud-logo.png',
       colorMode: {
         defaultMode: 'light',
         disableSwitch: false,
@@ -83,7 +83,7 @@ const config = {
         title: 'VakaCloud',
         logo: {
           alt: 'VakaCloud Logo',
-          src: 'img/logo.svg',
+          src: 'img/vaka-cloud-logo.png',
         },
         items: [
 
@@ -124,7 +124,7 @@ const config = {
             title: 'VakaCloud',
             items: [
               { label: 'Etusivu', to: '/' },
-              { label: 'Tuki', href: 'mailto:tuki@vakacloud.fi' },
+              { label: 'Tuki', href: 'mailto:info@vakacloud.fi' },
             ],
           },
         ],
