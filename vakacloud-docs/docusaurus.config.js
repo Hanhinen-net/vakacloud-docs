@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'VakaCloud Updates',
+  tagline: 'Stay updated with the latest news from VakaCloud',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -27,8 +27,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Hanhinen.net Consulting Oy', // Usually your GitHub org/user name.
+  projectName: 'VakaCloud', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -62,28 +62,36 @@ presets: [
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      // Voit vaihtaa tämän kuvan myöhemmin (näkyy kun linkki jaetaan somessa)
+      image: 'img/vaka-cloud-logo.png',
       colorMode: {
+        defaultMode: 'light',
+        disableSwitch: false,
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'My Site',
+        title: 'VakaCloud', // Sivuston nimi yläkulmassa
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'VakaCloud Logo',
+          src: 'img/vaka-cloud-logo.png', // Varmista että sinulla on logo tässä kansiossa (static/img/)
         },
         items: [
+          // Vasen puoli
+          {
+            to: '/blog', 
+            label: 'Päivitykset 🚀', // Tärkein linkki
+            position: 'left'
+          },
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Käyttöohjeet',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          // Oikea puoli
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            href: 'https://app.vakacloud.fi',
+            label: 'Kirjaudu palveluun',
             position: 'right',
           },
         ],
@@ -92,52 +100,40 @@ presets: [
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'VakaCloud',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Etusivu',
+                to: '/',
+              },
+              {
+                label: 'Päivitykset',
+                to: '/blog',
+              },
+              {
+                label: 'Käyttöohjeet',
                 to: '/docs/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Tuki',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Ota yhteyttä',
+                href: 'mailto:info@vakacloud.fi', // Tai tukisivun osoite
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Tietosuoja',
+                href: 'https://app.vakacloud.fi/privacy',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Hanhinen.net Consulting Oy.`,
       },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
     }),
-};
-
-export default config;
