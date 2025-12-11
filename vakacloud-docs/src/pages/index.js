@@ -5,7 +5,7 @@ import styles from './index.module.css';
 const FeatureList = [
   {
     title: 'Helppokäyttöinen',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/vaka-cloud-logo.png').default,
     description: (
       <>
         VakaCloud on suunniteltu yhdessä varhaiskasvatuksen ammattilaisten kanssa.
@@ -16,7 +16,7 @@ const FeatureList = [
   },
   {
     title: 'Tehokas Viestintä',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/vaka-cloud-logo.png').default,
     description: (
       <>
         Yhdistä päiväkoti ja koti saumattomasti. Reaaliaikaiset viestit,
@@ -27,7 +27,7 @@ const FeatureList = [
   },
   {
     title: 'Turvallinen & Kotimainen',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/vaka-cloud-logo.png').default,
     description: (
       <>
         Tietoturva on meille ykkösasia. Palvelu on täysin GDPR-yhteensopiva ja kaikki tiedot säilytetään
