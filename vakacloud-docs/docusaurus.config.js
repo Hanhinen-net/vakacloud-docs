@@ -36,8 +36,16 @@ const config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'fi',
+    locales: ['fi', 'en'],
+    localeConfigs: {
+      fi: {
+        label: 'Suomi',
+      },
+      en: {
+        label: 'English',
+      },
+    },
   },
 
   // docusaurus.config.js
@@ -103,8 +111,12 @@ const config = {
             position: 'left'
           },
           {
+            type: 'localeDropdown',
+            position: 'right',
+          },
+          {
             href: 'https://app.vakacloud.fi',
-            label: 'Siirry palveluun',
+            label: 'Kirjaudu VakaCloudiin',
             position: 'right',
           },
         ],
@@ -128,7 +140,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Hanhinen.net Consulting Oy.`,
+        copyright: `Copyright © ${new Date().getFullYear()} VakaCloud.`,
       },
       prism: {
         theme: prismThemes.github,

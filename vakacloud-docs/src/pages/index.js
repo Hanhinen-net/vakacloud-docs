@@ -4,6 +4,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
+import Translate from '@docusaurus/Translate'; // <--- TÄMÄ ON TÄRKEÄ TUONTI
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -13,24 +14,27 @@ function HomepageHeader() {
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">
+          {/* Käännetään myös tagline */}
+          <Translate id="homepage.tagline">Moderni toiminnanohjaus varhaiskasvatukseen</Translate>
+        </p>
         
-        {/* Linkkipainikkeet */}
+        {/* Linkkipainikkeet käännettynä */}
         <div className={styles.buttons} style={{ display: 'flex', flexDirection: 'column', gap: '15px', marginTop: '30px' }}>
           <Link
             className="button button--primary button--lg"
             to="/blog/tags/news">
-            Uutiset 📰
+            <Translate>Uutiset 📰</Translate>
           </Link>
           <Link
             className="button button--info button--lg"
             to="/blog/tags/updates">
-            Päivitykset 🚀
+            <Translate>Päivitykset 🚀</Translate>
           </Link>
           <Link
             className="button button--warning button--lg"
             to="/blog/tags/maintenance">
-            Huoltoilmoitukset ⚠️
+            <Translate>Huoltoilmoitukset ⚠️</Translate>
           </Link>
         </div>
       </div>
@@ -46,7 +50,6 @@ export default function Home() {
       description="VakaCloud päivitykset ja tiedotteet">
       <HomepageHeader />
       <main>
-        {/* Tässä ei ole enää HomepageFeatures-komponenttia, joten kuvat yms. poistuvat */}
       </main>
     </Layout>
   );
