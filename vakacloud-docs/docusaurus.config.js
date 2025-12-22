@@ -97,17 +97,17 @@ const config = {
 
           {
             to: '/blog/tags/updates', 
-            label: 'Päivitykset 🚀', 
+            label: 'Päivitykset', 
             position: 'left'
           },
           {
             to: '/blog/tags/news', 
-            label: 'Uutiset 📰', 
+            label: 'Uutiset', 
             position: 'left'
           },
           {
             to: '/blog/tags/maintenance', 
-            label: 'Huoltoilmoitukset ⚠️', 
+            label: 'Huoltoilmoitukset', 
             position: 'left'
           },
           {

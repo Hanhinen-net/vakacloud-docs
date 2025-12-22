@@ -2,12 +2,12 @@
 
 Tämä repositorio sisältää VakaCloud-palvelun julkisen dokumentaation, tiedotteiden ja päivityslokin lähdekoodin. Sivusto on rakennettu [Docusaurus 3](https://docusaurus.io/) -alustalla.
 
-⚠️ **HUOMIO: Tämä on julkinen repositorio.**
+**HUOMIO: Tämä on julkinen repositorio.**
 Älä koskaan tallenna tähän repoon salasanoja, API-avaimia, asiakastietoja tai tarkkoja teknisiä kuvauksia sisäisestä infrastruktuurista.
 
 ---
 
-## 🚀 Aloitusopas
+## Aloitusopas
 
 ### Esivaatimukset
 Varmista, että koneellesi on asennettu:
@@ -37,7 +37,7 @@ Tämä komento luo staattiset tiedostot `build/` -kansioon.
 
 ---
 
-## 📝 Sisällöntuotanto
+## Sisällöntuotanto
 
 Sivusto toimii ensisijaisesti tiedotuskanavana (Blog/News). Uudet julkaisut lisätään `blog/` -kansioon Markdown-tiedostoina (`.md`).
 
@@ -67,7 +67,7 @@ Tähän tulee varsinainen leipäteksti.
 
 ---
 
-## 🎨 Ulkoasu
+## Ulkoasu
 
 Sivusto on brändätty VakaCloudin ilmeen mukaiseksi.
 * **Pääväri:** Vihreä (#16A34A)
@@ -77,7 +77,7 @@ Tyylitiedostot: `src/css/custom.css`
 
 ---
 
-## 📂 Rakenne
+## Rakenne
 
 * `/blog` - Tiedotteet ja päivityslokit
 * `/src` - React-komponentit ja sivut

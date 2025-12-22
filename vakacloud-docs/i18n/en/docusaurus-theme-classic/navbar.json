@@ -7,17 +7,17 @@
     "message": "VakaCloud Logo",
     "description": "The alt text of navbar logo"
   },
-  "item.label.Päivitykset 🚀": {
-    "message": "Updates 🚀",
-    "description": "Navbar item with label Päivitykset 🚀"
+  "item.label.Päivitykset": {
+    "message": "Updates",
+    "description": "Navbar item with label Päivitykset"
   },
-  "item.label.Uutiset 📰": {
-    "message": "News 📰",
-    "description": "Navbar item with label Uutiset 📰"
+  "item.label.Uutiset": {
+    "message": "News",
+    "description": "Navbar item with label Uutiset"
   },
-  "item.label.Huoltoilmoitukset ⚠️": {
-    "message": "Maintenance Notifications ⚠️",
-    "description": "Navbar item with label Huoltoilmoitukset ⚠️"
+  "item.label.Huoltoilmoitukset": {
+    "message": "Maintenance Notifications",
+    "description": "Navbar item with label Huoltoilmoitukset"
   },
   "item.label.Siirry palveluun": {
     "message": "Login to VakaCloud",
