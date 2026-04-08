@@ -19,6 +19,10 @@
     "message": "Maintenance Notifications",
     "description": "Navbar item with label Huoltoilmoitukset"
   },
+  "item.label.Järjestelmän tila": {
+    "message": "System Status",
+    "description": "Navbar item with label Järjestelmän tila"
+  },
   "item.label.Siirry palveluun": {
     "message": "Login to VakaCloud",
     "description": "Navbar item with label Siirry palveluun"

@@ -111,6 +111,11 @@ const config = {
             position: 'left'
           },
           {
+            href: 'https://stats.uptimerobot.com/FRpRqrcLpZ',
+            label: 'Järjestelmän tila',
+            position: 'left',
+          },
+          {
             type: 'localeDropdown',
             position: 'right',
           },
