@@ -84,8 +84,8 @@ const config = {
       image: 'img/vaka-cloud-logo.png',
       colorMode: {
         defaultMode: 'light',
-        disableSwitch: true,
-        respectPrefersColorScheme: false,
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
       },
       navbar: {
         title: 'VakaCloud',
