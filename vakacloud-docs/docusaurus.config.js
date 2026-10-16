@@ -90,8 +90,8 @@ const config = {
       image: 'img/vaka-cloud-logo.png',
       colorMode: {
         defaultMode: 'light',
-        disableSwitch: false,
-        respectPrefersColorScheme: true,
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
       },
       navbar: {
         title: 'VakaCloud',
@@ -144,17 +144,10 @@ const config = {
             ],
           },
           {
-            title: 'Ohjeet',
-            items: [
-              { label: 'Henkilökunnalle', to: '/ohjeet/henkilokunta' },
-              { label: 'Huoltajille', to: '/ohjeet/huoltajat' },
-            ],
-          },
-          {
             title: 'VakaCloud',
             items: [
               { label: 'Etusivu', to: '/' },
-              { label: 'Tuki', href: 'mailto:info@vakacloud.fi' },
+              { label: 'Tuki', href: 'https://vakacloud.fi/contact/' },
             ],
           },
         ],
