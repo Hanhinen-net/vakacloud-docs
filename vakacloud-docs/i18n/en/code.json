@@ -341,6 +341,202 @@
   "Huoltoilmoitukset ⚠️": {
     "message": "Maintenance ⚠️",
     "description": "The label for the maintenance button"
+  },
+  "home.meta.title": {
+    "message": "Updates and guides",
+    "description": "Homepage document title"
+  },
+  "home.meta.description": {
+    "message": "VakaCloud updates, plus short guides for staff and guardians.",
+    "description": "Homepage meta description"
+  },
+  "home.hero.eyebrow": {
+    "message": "For everyday life at the daycare",
+    "description": "Homepage hero eyebrow"
+  },
+  "home.hero.title": {
+    "message": "Updates and guides",
+    "description": "Homepage hero heading"
+  },
+  "home.hero.lede": {
+    "message": "See what has changed in VakaCloud, and find short guides for staff and for guardians.",
+    "description": "Homepage hero subline"
+  },
+  "home.hero.primary": {
+    "message": "See the latest updates",
+    "description": "Homepage primary button"
+  },
+  "home.hero.secondary": {
+    "message": "Guides",
+    "description": "Homepage secondary button"
+  },
+  "home.hero.imageAlt": {
+    "message": "VakaCloud home screen with the daycare calendar and notices",
+    "description": "Alt text for the homepage product screenshot"
+  },
+  "home.guides.title": {
+    "message": "Where would you like to start?",
+    "description": "Homepage guides section heading"
+  },
+  "home.guides.lede": {
+    "message": "Pick a path. Updates show what is new. The guides help with ordinary days at the daycare.",
+    "description": "Homepage guides section introduction"
+  },
+  "home.card.updates.title": {
+    "message": "Latest updates",
+    "description": "Updates card title"
+  },
+  "home.card.updates.text": {
+    "message": "New features and small improvements that make the daycare day easier.",
+    "description": "Updates card text"
+  },
+  "home.card.staff.title": {
+    "message": "Guides for staff",
+    "description": "Staff card title"
+  },
+  "home.card.staff.text": {
+    "message": "Arrivals, messages to families, and care hours in one place, without paper notes.",
+    "description": "Staff card text"
+  },
+  "home.card.guardians.title": {
+    "message": "Guides for guardians",
+    "description": "Guardian card title"
+  },
+  "home.card.guardians.text": {
+    "message": "Book care hours, read messages from the daycare, and stay close to your child's day.",
+    "description": "Guardian card text"
+  },
+  "home.posts.title": {
+    "message": "Latest notices",
+    "description": "Latest posts heading"
+  },
+  "home.posts.lede": {
+    "message": "The newest news, updates, and maintenance notices.",
+    "description": "Latest posts introduction"
+  },
+  "home.posts.empty": {
+    "message": "No notices yet.",
+    "description": "Empty latest posts message"
+  },
+  "home.posts.all": {
+    "message": "All notices",
+    "description": "Link to the full notice list"
+  },
+  "home.cta.title": {
+    "message": "Need a hand?",
+    "description": "Support call to action heading"
+  },
+  "home.cta.text": {
+    "message": "Contact support. We reply in Finnish and English, and help is also available in Swedish.",
+    "description": "Support call to action text"
+  },
+  "home.cta.button": {
+    "message": "Contact support",
+    "description": "Support call to action button"
+  },
+  "home.tag.news": {
+    "message": "News",
+    "description": "News tag label on the homepage list"
+  },
+  "home.tag.maintenance": {
+    "message": "Maintenance",
+    "description": "Maintenance tag label on the homepage list"
+  },
+  "home.tag.updates": {
+    "message": "Update",
+    "description": "Update tag label on the homepage list"
+  },
+  "guide.back": {
+    "message": "Back to the guides",
+    "description": "Back link on a guide page"
+  },
+  "guide.login": {
+    "message": "Log in to VakaCloud",
+    "description": "Login link on a guide page"
+  },
+  "guide.seeUpdates": {
+    "message": "See updates",
+    "description": "Updates link on a guide page"
+  },
+  "guide.staff.meta": {
+    "message": "Guides for staff",
+    "description": "Staff guide document title"
+  },
+  "guide.staff.title": {
+    "message": "Guides for staff",
+    "description": "Staff guide heading"
+  },
+  "guide.staff.intro": {
+    "message": "Mornings run more smoothly when you can see who has arrived and send a message to families from the same place.",
+    "description": "Staff guide introduction"
+  },
+  "guide.staff.arrival.title": {
+    "message": "Arrivals and departures",
+    "description": "Staff arrival heading"
+  },
+  "guide.staff.arrival.text": {
+    "message": "Children and adults check in and out with a Täppi tag. You can see at a glance who is in the building.",
+    "description": "Staff arrival text"
+  },
+  "guide.staff.messages.title": {
+    "message": "Messages to families",
+    "description": "Staff messages heading"
+  },
+  "guide.staff.messages.text": {
+    "message": "Send a note to the whole daycare, to one group, or to a single family. Guardians read it in their own view.",
+    "description": "Staff messages text"
+  },
+  "guide.staff.hours.title": {
+    "message": "Care hours",
+    "description": "Staff care hours heading"
+  },
+  "guide.staff.hours.text": {
+    "message": "Booked hours and the hours that actually happened sit side by side. You can mark an absence without a paper slip.",
+    "description": "Staff care hours text"
+  },
+  "guide.staff.toGuardians": {
+    "message": "Guides for guardians",
+    "description": "Link from the staff guide to the guardian guide"
+  },
+  "guide.guardians.meta": {
+    "message": "Guides for guardians",
+    "description": "Guardian guide document title"
+  },
+  "guide.guardians.title": {
+    "message": "Guides for guardians",
+    "description": "Guardian guide heading"
+  },
+  "guide.guardians.intro": {
+    "message": "VakaCloud is the place where you handle everyday things with the daycare.",
+    "description": "Guardian guide introduction"
+  },
+  "guide.guardians.hours.title": {
+    "message": "Care hours",
+    "description": "Guardian care hours heading"
+  },
+  "guide.guardians.hours.text": {
+    "message": "Book your child's care hours in the app. If plans change, you can update the booking yourself.",
+    "description": "Guardian care hours text"
+  },
+  "guide.guardians.messages.title": {
+    "message": "Messages from the daycare",
+    "description": "Guardian messages heading"
+  },
+  "guide.guardians.messages.text": {
+    "message": "Notices and photos from the daycare arrive in one place. You can read them when you have a moment.",
+    "description": "Guardian messages text"
+  },
+  "guide.guardians.invoices.title": {
+    "message": "Invoices",
+    "description": "Guardian invoices heading"
+  },
+  "guide.guardians.invoices.text": {
+    "message": "Invoices sit next to the other details, and you can pay them online.",
+    "description": "Guardian invoices text"
+  },
+  "guide.guardians.toStaff": {
+    "message": "Guides for staff",
+    "description": "Link from the guardian guide to the staff guide"
   }
 }
 

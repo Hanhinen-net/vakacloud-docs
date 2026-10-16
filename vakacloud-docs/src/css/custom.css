@@ -1,16 +1,54 @@
 /**
  * VakaCloud playbook theme.
  * Primary #16A34A, hover #15803D. Brand green only — never #007BFF.
+ * Page canvas is white. Alternate bands are #F7F8F7.
  */
 
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/inter-400.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/inter-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/inter-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/inter-700.woff2') format('woff2');
+}
+
 :root {
+  --ifm-font-family-base: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  --ifm-heading-font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  --ifm-font-family-monospace: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --ifm-line-height-base: 1.7;
+  --ifm-heading-line-height: 1.2;
   --vc-primary: #16A34A;
   --vc-primary-hover: #15803D;
   --vc-primary-active: #166534;
   --vc-text: rgb(17, 24, 39);
   --vc-heading: rgb(55, 65, 81);
   --vc-muted: #6b7280;
-  --vc-page: #f9f9f9;
+  --vc-page: #ffffff;
   --vc-alt: #f7f8f7;
   --vc-card: #ffffff;
   --vc-border: #e5e7eb;
@@ -64,9 +102,9 @@
   --ifm-navbar-link-active-color: var(--vc-primary);
   --ifm-navbar-shadow: none;
   --ifm-footer-background-color: var(--vc-footer);
-  --ifm-footer-color: var(--vc-text);
-  --ifm-footer-link-color: var(--vc-text);
-  --ifm-footer-link-hover-color: var(--vc-link-hover);
+  --ifm-footer-color: #374151;
+  --ifm-footer-link-color: #15803d;
+  --ifm-footer-link-hover-color: #166534;
   --ifm-footer-title-color: var(--vc-heading);
   --ifm-link-color: var(--vc-link);
   --ifm-link-hover-color: var(--vc-link-hover);
@@ -136,9 +174,9 @@ html[data-theme='dark'] {
   --ifm-navbar-link-hover-color: var(--vc-link-hover);
   --ifm-navbar-link-active-color: var(--vc-link);
   --ifm-footer-background-color: var(--vc-footer);
-  --ifm-footer-color: var(--vc-text);
-  --ifm-footer-link-color: #d1d5db;
-  --ifm-footer-link-hover-color: var(--vc-link-hover);
+  --ifm-footer-color: #e5e7eb;
+  --ifm-footer-link-color: #4ade80;
+  --ifm-footer-link-hover-color: #86efac;
   --ifm-footer-title-color: var(--vc-heading);
   --ifm-link-color: var(--vc-link);
   --ifm-link-hover-color: var(--vc-link-hover);
@@ -217,13 +255,21 @@ h6 a:hover {
 }
 
 .navbar__link:hover,
-.navbar__link--active,
 .navbar__title:hover {
-  color: var(--vc-link-hover);
+  color: #15803d;
+}
+
+.navbar__link--active {
+  color: #16a34a;
+}
+
+html[data-theme='dark'] .navbar__link:hover,
+html[data-theme='dark'] .navbar__title:hover {
+  color: #86efac;
 }
 
 html[data-theme='dark'] .navbar__link--active {
-  color: var(--vc-link);
+  color: #4ade80;
 }
 
 .navbar-sidebar,
@@ -237,9 +283,9 @@ html[data-theme='dark'] .navbar__link--active {
   box-shadow: 0 8px 24px rgba(17, 24, 39, 0.08);
 }
 
-/* Homepage hero is the alternate section. Page canvas stays #F9F9F9. */
+/* Legacy hero class. The homepage uses its own layout. */
 header.hero {
-  background-color: var(--vc-alt);
+  background-color: var(--vc-page);
   color: var(--vc-text);
 }
 

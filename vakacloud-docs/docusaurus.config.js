@@ -4,7 +4,11 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
+import {createRequire} from 'module';
 import {themes as prismThemes} from 'prism-react-renderer';
+
+const require = createRequire(import.meta.url);
+const recentPostsPlugin = require('./src/plugins/recent-posts');
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -50,6 +54,8 @@ const config = {
 
   // docusaurus.config.js
 
+
+  plugins: [recentPostsPlugin],
 
   presets: [
     [
@@ -135,6 +141,13 @@ const config = {
               { label: 'Päivitykset', to: '/blog/tags/updates' },
               { label: 'Uutiset', to: '/blog/tags/news' },
               { label: 'Huoltoilmoitukset', to: '/blog/tags/maintenance' },
+            ],
+          },
+          {
+            title: 'Ohjeet',
+            items: [
+              { label: 'Henkilökunnalle', to: '/ohjeet/henkilokunta' },
+              { label: 'Huoltajille', to: '/ohjeet/huoltajat' },
             ],
           },
           {
