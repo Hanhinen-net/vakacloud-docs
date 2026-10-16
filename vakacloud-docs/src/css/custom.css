@@ -128,72 +128,48 @@
   color-scheme: light;
 }
 
+/* Dark theme is disabled. If the attribute is still set, keep the light canvas. */
 html[data-theme='dark'] {
-  --vc-primary: #16A34A;
-  --vc-primary-hover: #22c55e;
-  --vc-primary-active: #15803d;
-  --vc-text: #e5e7eb;
-  --vc-heading: #f3f4f6;
-  --vc-muted: #9ca3af;
-  --vc-page: #111827;
-  --vc-alt: #0f172a;
-  --vc-card: #1f2937;
-  --vc-border: #374151;
-  --vc-focus: rgb(34, 197, 94);
-  --vc-navbar: #111827;
-  --vc-footer: #0f172a;
-  --vc-link: #4ade80;
-  --vc-link-hover: #86efac;
-  --vc-on-primary: #ffffff;
-
-  --ifm-color-primary: var(--vc-primary);
-  --ifm-color-primary-dark: #15803d;
-  --ifm-color-primary-darker: #166534;
-  --ifm-color-primary-darkest: #14532d;
-  --ifm-color-primary-light: #22c55e;
-  --ifm-color-primary-lighter: #4ade80;
-  --ifm-color-primary-lightest: #14532d;
-  --ifm-color-primary-contrast-background: #052e16;
-  --ifm-color-primary-contrast-foreground: #dcfce7;
-
-  --ifm-color-info: #22c55e;
-  --ifm-color-info-dark: #16a34a;
-  --ifm-color-info-contrast-background: #052e16;
-  --ifm-color-info-contrast-foreground: #dcfce7;
-
-  --ifm-color-warning-contrast-background: #451a03;
-  --ifm-color-warning-contrast-foreground: #fde68a;
-
-  --ifm-background-color: var(--vc-page);
-  --ifm-background-surface-color: var(--vc-card);
-  --ifm-font-color-base: var(--vc-text);
-  --ifm-color-content: var(--vc-text);
-  --ifm-color-content-secondary: var(--vc-muted);
-  --ifm-heading-color: var(--vc-heading);
-  --ifm-navbar-background-color: var(--vc-navbar);
-  --ifm-navbar-link-hover-color: var(--vc-link-hover);
-  --ifm-navbar-link-active-color: var(--vc-link);
-  --ifm-footer-background-color: var(--vc-footer);
-  --ifm-footer-color: #e5e7eb;
-  --ifm-footer-link-color: #4ade80;
-  --ifm-footer-link-hover-color: #86efac;
-  --ifm-footer-title-color: var(--vc-heading);
-  --ifm-link-color: var(--vc-link);
-  --ifm-link-hover-color: var(--vc-link-hover);
-  --ifm-menu-color: var(--vc-text);
-  --ifm-menu-color-active: var(--vc-link);
-  --ifm-menu-color-background-active: rgba(34, 197, 94, 0.14);
-  --ifm-hover-overlay: rgba(255, 255, 255, 0.06);
-  --ifm-color-emphasis-300: var(--vc-border);
-  --ifm-toc-border-color: var(--vc-border);
-  --ifm-table-border-color: var(--vc-border);
-  --ifm-hr-background-color: var(--vc-border);
-  --ifm-blockquote-border-color: var(--vc-link);
-  --ifm-code-background: #0b1220;
-  --ifm-card-background-color: var(--vc-card);
-  --docusaurus-highlighted-code-line-bg: rgba(34, 197, 94, 0.16);
-  --docusaurus-tag-list-border: var(--vc-border);
-  color-scheme: dark;
+  --vc-text: rgb(17, 24, 39);
+  --vc-heading: rgb(55, 65, 81);
+  --vc-muted: #6b7280;
+  --vc-page: #ffffff;
+  --vc-alt: #f7f8f7;
+  --vc-card: #ffffff;
+  --vc-border: #e5e7eb;
+  --vc-navbar: #ffffff;
+  --vc-footer: #f3f4f3;
+  --vc-link: #16A34A;
+  --vc-link-hover: #15803D;
+  --ifm-background-color: #ffffff;
+  --ifm-background-surface-color: #ffffff;
+  --ifm-font-color-base: rgb(17, 24, 39);
+  --ifm-color-content: rgb(17, 24, 39);
+  --ifm-color-content-secondary: #6b7280;
+  --ifm-heading-color: rgb(55, 65, 81);
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-navbar-link-hover-color: #15803d;
+  --ifm-navbar-link-active-color: #16a34a;
+  --ifm-footer-background-color: #f3f4f3;
+  --ifm-footer-color: #374151;
+  --ifm-footer-link-color: #15803d;
+  --ifm-footer-link-hover-color: #166534;
+  --ifm-footer-title-color: rgb(55, 65, 81);
+  --ifm-link-color: #16a34a;
+  --ifm-link-hover-color: #15803d;
+  --ifm-menu-color: rgb(17, 24, 39);
+  --ifm-menu-color-active: #16a34a;
+  --ifm-menu-color-background-active: #f0fdf4;
+  --ifm-color-emphasis-300: #e5e7eb;
+  --ifm-toc-border-color: #e5e7eb;
+  --ifm-table-border-color: #e5e7eb;
+  --ifm-hr-background-color: #e5e7eb;
+  --ifm-code-background: #f7f8f7;
+  --ifm-card-background-color: #ffffff;
+  --ifm-dropdown-background-color: #ffffff;
+  color-scheme: light;
+  background-color: #ffffff;
+  color: rgb(17, 24, 39);
 }
 
 html,
@@ -263,15 +239,6 @@ h6 a:hover {
   color: #16a34a;
 }
 
-html[data-theme='dark'] .navbar__link:hover,
-html[data-theme='dark'] .navbar__title:hover {
-  color: #86efac;
-}
-
-html[data-theme='dark'] .navbar__link--active {
-  color: #4ade80;
-}
-
 .navbar-sidebar,
 .navbar-sidebar__brand {
   background-color: var(--vc-navbar);
@@ -322,10 +289,6 @@ header.hero .hero__subtitle {
   background-color: var(--vc-card);
   border-color: #16A34A;
   color: #15803D;
-}
-
-html[data-theme='dark'] .button.button--info {
-  color: #4ade80;
 }
 
 .button.button--info:hover {

@@ -23,8 +23,8 @@
     "message": "System Status",
     "description": "Navbar item with label Järjestelmän tila"
   },
-  "item.label.Siirry palveluun": {
-    "message": "Login to VakaCloud",
-    "description": "Navbar item with label Siirry palveluun"
+  "item.label.Kirjaudu VakaCloudiin": {
+    "message": "Log in to VakaCloud",
+    "description": "Navbar item with label Kirjaudu VakaCloudiin"
   }
 }
