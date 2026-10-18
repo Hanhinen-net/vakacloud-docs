@@ -16,11 +16,11 @@
     "description": "Navbar item with label Uutiset"
   },
   "item.label.Huoltoilmoitukset": {
-    "message": "Maintenance Notifications",
+    "message": "Maintenance notices",
     "description": "Navbar item with label Huoltoilmoitukset"
   },
   "item.label.Järjestelmän tila": {
-    "message": "System Status",
+    "message": "System status",
     "description": "Navbar item with label Järjestelmän tila"
   },
   "item.label.Kirjaudu VakaCloudiin": {

@@ -6,8 +6,8 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import isInternalUrl from '@docusaurus/isInternalUrl';
 import IconExternalLink from '@theme/Icon/ExternalLink';
 
-const SUPPORT_FI = 'https://vakacloud.fi/contact/';
-const SUPPORT_EN = 'https://vakacloud.fi/en/contact/';
+const SUPPORT_FI = 'https://portal.vakacloud.fi/fi';
+const SUPPORT_EN = 'https://portal.vakacloud.fi/en';
 
 export default function FooterLinkItem({item}) {
   const {i18n} = useDocusaurusContext();

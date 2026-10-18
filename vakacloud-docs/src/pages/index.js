@@ -9,8 +9,8 @@ import styles from './index.module.css';
 
 function supportHref(locale) {
   return locale === 'en'
-    ? 'https://vakacloud.fi/en/contact/'
-    : 'https://vakacloud.fi/contact/';
+    ? 'https://portal.vakacloud.fi/en'
+    : 'https://portal.vakacloud.fi/fi';
 }
 
 function formatDate(value, locale) {
