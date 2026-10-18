@@ -1,17 +1,5 @@
 rasmus:
-  name: Rasmus Hanhinen
-  title: Founder & CEO
+  name: Rasmus Mareen-Hanhinen
+  title: Perustaja ja toimitusjohtaja
   url: https://linkedin.com/in/rasmus-hanhinen
-  page: true
-  
-santeri:
-  name: Santeri Hanhinen
-  title: Fullstack Developer
-  url: https://linkedin.com/in/santeri-hanhinen
-  page: true
-
-aleksi:
-  name: Aleksi Kuusinen
-  title: Founding Developer
-  url: https://linkedin.com/in/aleksi-kuusinen
   page: true

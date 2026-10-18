@@ -1,15 +1,14 @@
 updates:
-  label: Updates
+  label: Päivitykset
   permalink: /updates
-  description: Updates tag description
+  description: Ominaisuuspäivitykset ja parannukset VakaCloud-palveluun.
 
 maintenance:
-  label: Maintenance
+  label: Huoltoilmoitukset
   permalink: /maintenance
-  description: Maintenance tag description
+  description: Suunnitellut huoltokatkot ja palvelun häiriötilanteet.
 
 news:
-  label: News
+  label: Uutiset
   permalink: /news
-  description: News tag description
-
+  description: VakaCloudin uutiset ja muut tiedotteet.

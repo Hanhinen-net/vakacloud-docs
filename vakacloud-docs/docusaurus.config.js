@@ -67,15 +67,28 @@ const config = {
         
         blog: {
           showReadingTime: true,
-          routeBasePath: '/blog', 
+          routeBasePath: '/blog',
+          blogTitle: 'Tiedotteet',
+          blogDescription:
+            'VakaCloudin päivitykset, uutiset ja huoltoilmoitukset.',
           blogSidebarTitle: 'Viimeisimmät tiedotteet',
           blogSidebarCount: 'ALL',
-          
-          
           feedOptions: {
             type: 'json',
-            copyright: `Copyright © ${new Date().getFullYear()} Hanhinen.net Consulting Oy`,
+            copyright: `Copyright © ${new Date().getFullYear()} VakaCloud`,
           },
+        },
+        sitemap: {
+          // Author pagination is generated as /blog/authors/<key>/authors/<n>.
+          // Those paths, and any author page with no posts, stay out of the sitemap.
+          ignorePatterns: [
+            '/blog/authors/*/authors/**',
+            '/en/blog/authors/*/authors/**',
+            '/blog/authors/aleksi',
+            '/blog/authors/santeri',
+            '/en/blog/authors/aleksi',
+            '/en/blog/authors/santeri',
+          ],
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -147,11 +160,11 @@ const config = {
             title: 'VakaCloud',
             items: [
               { label: 'Etusivu', to: '/' },
-              { label: 'Tuki', href: 'https://vakacloud.fi/contact/' },
+              { label: 'Tuki', href: 'https://portal.vakacloud.fi/fi' },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} VakaCloud.`,
+        copyright: `Copyright © ${new Date().getFullYear()} VakaCloud`,
       },
       prism: {
         theme: prismThemes.github,

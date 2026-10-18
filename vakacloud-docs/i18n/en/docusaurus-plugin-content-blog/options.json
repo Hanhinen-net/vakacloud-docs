@@ -1,14 +1,14 @@
 {
   "title": {
-    "message": "Blog",
+    "message": "Notices",
     "description": "The title for the blog used in SEO"
   },
   "description": {
-    "message": "Blog",
+    "message": "VakaCloud updates, news, and maintenance notices.",
     "description": "The description for the blog used in SEO"
   },
   "sidebar.title": {
-    "message": "Latest posts",
+    "message": "Latest notices",
     "description": "The label for the left sidebar"
   }
 }

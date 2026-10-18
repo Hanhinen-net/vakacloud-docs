@@ -1,0 +1,14 @@
+updates:
+  label: Updates
+  permalink: /updates
+  description: Feature updates and improvements to the VakaCloud service.
+
+maintenance:
+  label: Maintenance notices
+  permalink: /maintenance
+  description: Planned maintenance windows and service incidents.
+
+news:
+  label: News
+  permalink: /news
+  description: VakaCloud news and other notices.
